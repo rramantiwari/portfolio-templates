@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Marco Rossi - Culinary Artist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top culinary-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-utensils me-2"></i>Chef Marco Rossi
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#specialties">Specialties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Signature Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section culinary-hero">
+        <div class="hero-video-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Culinary
+                            <span class="text-culinary">Artistry</span>
+                            Redefined
+                        </h1>
+                        <p class="hero-subtitle">
+                            Award-winning chef with 20+ years of experience creating extraordinary dining experiences
+                            that blend traditional techniques with modern innovation.
+                        </p>
+                        <div class="hero-achievements">
+                            <div class="achievement-item">
+                                <i class="fas fa-star"></i>
+                                <span>Michelin Star Chef</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>James Beard Award</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span>Top Chef Winner</span>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#menu" class="btn btn-culinary btn-lg me-3">
+                                <i class="fas fa-book-open me-2"></i>View Menu
+                            </a>
+                            <a href="#contact" class="btn btn-outline-culinary btn-lg">
+                                <i class="fas fa-calendar-alt me-2"></i>Book Experience
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&h=400&fit=crop" alt="Chef Marco Rossi" class="img-fluid rounded-3 shadow-lg chef-portrait">
+                        <div class="culinary-elements">
+                            <div class="culinary-element element-1"><i class="fas fa-pepper-hot"></i></div>
+                            <div class="culinary-element element-2"><i class="fas fa-wine-glass"></i></div>
+                            <div class="culinary-element element-3"><i class="fas fa-fire"></i></div>
+                            <div class="culinary-element element-4"><i class="fas fa-leaf"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="section-title">The Chef's Journey</h2>
+                    <p class="lead">From humble beginnings in Tuscany to international culinary acclaim.</p>
+                    <p>Born in the heart of Tuscany, Chef Marco Rossi discovered his passion for cooking at his grandmother's side. After training at the prestigious Culinary Institute of Florence and working under renowned chefs across Europe, he has developed a unique culinary philosophy that celebrates both tradition and innovation.</p>
+
+                    <div class="chef-philosophy">
+                        <h5>Culinary Philosophy</h5>
+                        <blockquote class="blockquote">
+                            <p>"Cooking is not just about feeding the body, but nourishing the soul. Every dish tells a story, every flavor evokes a memory, and every meal creates a moment of connection."</p>
+                            <footer class="blockquote-footer">Chef Marco Rossi</footer>
+                        </blockquote>
+                    </div>
+
+                    <div class="chef-stats">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="stat-number" data-count="20">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-number" data-count="15">0</div>
+                                <div class="stat-label">Awards Won</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-number" data-count="5">0</div>
+                                <div class="stat-label">Restaurants</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="chef-gallery">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=300&fit=crop" alt="Chef in Kitchen" class="img-fluid rounded-3 shadow mb-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=250&h=200&fit=crop" alt="Cooking Process" class="img-fluid rounded-3 shadow">
+                            </div>
+                            <div class="col-6">
+                                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=250&h=200&fit=crop" alt="Restaurant" class="img-fluid rounded-3 shadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Culinary Specialties</h2>
+                <p class="section-subtitle">Mastering diverse cuisines with passion and precision</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="specialty-card">
+                        <div class="specialty-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=250&fit=crop" alt="Italian Cuisine" class="img-fluid">
+                        </div>
+                        <div class="specialty-content">
+                            <h4><i class="fas fa-pizza-slice me-2"></i>Italian Cuisine</h4>
+                            <p>Authentic Italian flavors with modern presentation, featuring handmade pasta, wood-fired pizzas, and traditional sauces.</p>
+                            <ul class="specialty-features">
+                                <li>Handmade Fresh Pasta</li>
+                                <li>Wood-Fired Neapolitan Pizza</li>
+                                <li>Traditional Risottos</li>
+                                <li>Artisanal Gelato</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="specialty-card">
+                        <div class="specialty-image">
+                            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=250&fit=crop" alt="French Cuisine" class="img-fluid">
+                        </div>
+                        <div class="specialty-content">
+                            <h4><i class="fas fa-wine-bottle me-2"></i>French Cuisine</h4>
+                            <p>Classic French techniques elevated with contemporary flair, emphasizing seasonal ingredients and perfect execution.</p>
+                            <ul class="specialty-features">
+                                <li>Classic French Sauces</li>
+                                <li>Sous Vide Techniques</li>
+                                <li>Artisanal Pastries</li>
+                                <li>Wine Pairings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="specialty-card">
+                        <div class="specialty-content">
+                            <h4><i class="fas fa-seedling me-2"></i>Farm-to-Table</h4>
+                            <p>Sustainable cooking using locally sourced, organic ingredients to create dishes that celebrate the season's best offerings.</p>
+                            <ul class="specialty-features">
+                                <li>Organic Local Produce</li>
+                                <li>Seasonal Menu Changes</li>
+                                <li>Sustainable Practices</li>
+                                <li>Garden-Fresh Herbs</li>
+                            </ul>
+                        </div>
+                        <div class="specialty-image">
+                            <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=400&h=250&fit=crop" alt="Farm to Table" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-dark">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title text-white">Culinary Gallery</h2>
+                <p class="section-subtitle text-light">A visual feast of our signature creations</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=400&fit=crop" alt="Signature Dish 1" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <h5>Truffle Risotto</h5>
+                        <p>Creamy Arborio rice with black truffle shavings</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=400&fit=crop" alt="Signature Dish 2" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <h5>Beef Wellington</h5>
+                        <p>Classic preparation with mushroom duxelles</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=400&fit=crop" alt="Signature Dish 3" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <h5>Chocolate Soufflé</h5>
+                        <p>Light and airy with molten center</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=400&fit=crop" alt="Signature Dish 4" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <h5>Seafood Platter</h5>
+                        <p>Fresh catch with seasonal vegetables</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=400&fit=crop" alt="Signature Dish 5" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <h5>Margherita Pizza</h5>
+                        <p>Wood-fired with San Marzano tomatoes</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=400&fit=crop" alt="Signature Dish 6" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <h5>Duck Confit</h5>
+                        <p>Slow-cooked with cherry gastrique</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Signature Tasting Menu</h2>
+                <p class="section-subtitle">A carefully curated journey through flavors and textures</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="menu-card" data-aos="fade-up">
+                        <div class="menu-header">
+                            <h3>Chef's 7-Course Tasting Menu</h3>
+                            <p class="menu-price">$185 per person</p>
+                            <p class="menu-description">Wine pairing available for additional $85</p>
+                        </div>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h5>Amuse-Bouche</h5>
+                                    <span class="course-number">1</span>
+                                </div>
+                                <p>Oyster foam with caviar pearls and micro herbs</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h5>Antipasti</h5>
+                                    <span class="course-number">2</span>
+                                </div>
+                                <p>Burrata with roasted peach, prosciutto, and basil oil</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h5>Primi</h5>
+                                    <span class="course-number">3</span>
+                                </div>
+                                <p>Handmade tortellini in brown butter sage sauce with aged parmesan</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h5>Pesce</h5>
+                                    <span class="course-number">4</span>
+                                </div>
+                                <p>Pan-seared halibut with salmoriglio and roasted vegetables</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h5>Carne</h5>
+                                    <span class="course-number">5</span>
+                                </div>
+                                <p>Dry-aged ribeye with truffle potato gratin and red wine reduction</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h5>Formaggi</h5>
+                                    <span class="course-number">6</span>
+                                </div>
+                                <p>Selection of artisanal cheeses with honeycomb and walnuts</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h5>Dolci</h5>
+                                    <span class="course-number">7</span>
+                                </div>
+                                <p>Tiramisu deconstructed with espresso caviar and mascarpone mousse</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-culinary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="section-title text-white">Book Your Culinary Experience</h2>
+                    <p class="lead">Ready for an unforgettable dining journey? Let's create something extraordinary together.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt me-3"></i>
+                            <span>Rossi's Kitchen<br>123 Culinary Boulevard<br>Gourmet District, GD 12345</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone me-3"></i>
+                            <span>(555) CHEF-123 (2433)</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope me-3"></i>
+                            <span>reservations@chefmarco.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock me-3"></i>
+                            <span>Dinner: Tue-Sat 6:00 PM - 10:00 PM<br>Private Events: By Appointment</span>
+                        </div>
+                    </div>
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <form class="reservation-form">
+                        <h4 class="mb-4">Make a Reservation</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <select class="form-control" required>
+                                    <option value="">Select Time</option>
+                                    <option value="6:00">6:00 PM</option>
+                                    <option value="6:30">6:30 PM</option>
+                                    <option value="7:00">7:00 PM</option>
+                                    <option value="7:30">7:30 PM</option>
+                                    <option value="8:00">8:00 PM</option>
+                                    <option value="8:30">8:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <select class="form-control" required>
+                                    <option value="">Party Size</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="more">More than 6</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <select class="form-control">
+                                    <option value="">Experience Type</option>
+                                    <option value="tasting">Tasting Menu</option>
+                                    <option value="ala-carte">À la Carte</option>
+                                    <option value="private">Private Dining</option>
+                                    <option value="chef-table">Chef's Table</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Special requests, dietary restrictions, or occasion details"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light btn-lg w-100">
+                            <i class="fas fa-utensils me-2"></i>Reserve Table
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p>&copy; 2024 Chef Marco Rossi. All rights reserved.</p>
+            <p class="small">Culinary excellence since 2004</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

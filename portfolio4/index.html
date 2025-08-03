@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen - UI/UX Designer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <div class="logo">
+                    <span class="logo-text">Alex</span>
+                    <span class="logo-dot"></span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process">Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span>Available for freelance</span>
+                        </div>
+                        <h1 class="hero-title">
+                            <span class="title-line">Creating</span>
+                            <span class="title-line highlight">Digital</span>
+                            <span class="title-line">Experiences</span>
+                        </h1>
+                        <p class="hero-description">
+                            I'm Alex, a UI/UX designer passionate about crafting intuitive and beautiful digital experiences that solve real problems and delight users.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#work" class="btn btn-primary">
+                                <span>View My Work</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <span>Let's Talk</span>
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">30+</span>
+                                <span class="stat-label">Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="design-elements">
+                            <div class="element element-1"></div>
+                            <div class="element element-2"></div>
+                            <div class="element element-3"></div>
+                            <div class="element element-4"></div>
+                        </div>
+                        <div class="hero-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&h=600&fit=crop" alt="Alex Chen - UI/UX Designer">
+                        </div>
+                        <div class="floating-card card-1">
+                            <div class="card-content">
+                                <i class="fas fa-palette"></i>
+                                <span>Design Systems</span>
+                            </div>
+                        </div>
+                        <div class="floating-card card-2">
+                            <div class="card-content">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Mobile First</span>
+                            </div>
+                        </div>
+                        <div class="floating-card card-3">
+                            <div class="card-content">
+                                <i class="fas fa-users"></i>
+                                <span>User Research</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-badge">About Me</div>
+                        <h2 class="section-title">
+                            Designing with purpose,
+                            <span class="highlight">creating with passion</span>
+                        </h2>
+                        <p class="section-description">
+                            With over 5 years of experience in UI/UX design, I specialize in creating user-centered digital experiences that are both beautiful and functional. My approach combines strategic thinking with creative execution.
+                        </p>
+
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>UI Design</h4>
+                                    <p>Creating beautiful, intuitive interfaces</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>UX Research</h4>
+                                    <p>Understanding user needs and behaviors</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>Design Systems</h4>
+                                    <p>Building scalable design frameworks</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="skill-content">
+                                    <h4>Prototyping</h4>
+                                    <p>Bringing ideas to life with interactive prototypes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tools-section">
+                            <h4>Tools I Use</h4>
+                            <div class="tools-grid">
+                                <div class="tool-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                                    <span>Figma</span>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketch/sketch-original.svg" alt="Sketch">
+                                    <span>Sketch</span>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop">
+                                    <span>Photoshop</span>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator">
+                                    <span>Illustrator</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-visual">
+                        <div class="design-process">
+                            <div class="process-step active" data-step="1">
+                                <div class="step-number">01</div>
+                                <div class="step-content">
+                                    <h4>Research</h4>
+                                    <p>Understanding user needs and market requirements</p>
+                                </div>
+                            </div>
+                            <div class="process-step" data-step="2">
+                                <div class="step-number">02</div>
+                                <div class="step-content">
+                                    <h4>Ideate</h4>
+                                    <p>Brainstorming solutions and exploring concepts</p>
+                                </div>
+                            </div>
+                            <div class="process-step" data-step="3">
+                                <div class="step-number">03</div>
+                                <div class="step-content">
+                                    <h4>Design</h4>
+                                    <p>Creating wireframes, mockups, and prototypes</p>
+                                </div>
+                            </div>
+                            <div class="process-step" data-step="4">
+                                <div class="step-number">04</div>
+                                <div class="step-content">
+                                    <h4>Test</h4>
+                                    <p>Validating designs through user testing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">Featured Work</div>
+                <h2 class="section-title">
+                    Selected projects that showcase
+                    <span class="highlight">my expertise</span>
+                </h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=400&fit=crop" alt="FinTech Mobile App">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>FinTech Mobile App</h3>
+                                <p>Complete redesign of a financial mobile application focusing on user experience and accessibility.</p>
+                                <div class="project-tags">
+                                    <span>Mobile Design</span>
+                                    <span>UX Research</span>
+                                    <span>Prototyping</span>
+                                </div>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=400&fit=crop" alt="E-commerce Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>E-commerce Dashboard</h3>
+                                <p>Admin dashboard design for an e-commerce platform with advanced analytics and inventory management.</p>
+                                <div class="project-tags">
+                                    <span>Web Design</span>
+                                    <span>Dashboard</span>
+                                    <span>Data Viz</span>
+                                </div>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=500&h=400&fit=crop" alt="Brand Identity">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Brand Identity Design</h3>
+                                <p>Complete brand identity design for a tech startup including logo, color palette, and guidelines.</p>
+                                <div class="project-tags">
+                                    <span>Branding</span>
+                                    <span>Logo Design</span>
+                                    <span>Guidelines</span>
+                                </div>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=400&fit=crop" alt="Fitness App">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Fitness Tracking App</h3>
+                                <p>Mobile app design for fitness tracking with gamification elements and social features.</p>
+                                <div class="project-tags">
+                                    <span>Mobile App</span>
+                                    <span>Gamification</span>
+                                    <span>Social</span>
+                                </div>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=400&fit=crop" alt="SaaS Platform">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>SaaS Platform Redesign</h3>
+                                <p>Complete redesign of a SaaS platform focusing on user onboarding and feature discovery.</p>
+                                <div class="project-tags">
+                                    <span>SaaS</span>
+                                    <span>Web App</span>
+                                    <span>Onboarding</span>
+                                </div>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=500&h=400&fit=crop" alt="Design System">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Design System</h3>
+                                <p>Comprehensive design system with reusable components and detailed documentation.</p>
+                                <div class="project-tags">
+                                    <span>Design System</span>
+                                    <span>Components</span>
+                                    <span>Documentation</span>
+                                </div>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">My Process</div>
+                <h2 class="section-title">
+                    How I approach
+                    <span class="highlight">design challenges</span>
+                </h2>
+            </div>
+
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-inner">01</div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Discovery & Research</h3>
+                        <p>I start by understanding the problem, target audience, and business goals through user interviews, competitive analysis, and market research.</p>
+                        <div class="process-tools">
+                            <span>User Interviews</span>
+                            <span>Surveys</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-inner">02</div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Define & Ideate</h3>
+                        <p>Based on research insights, I define user personas, create user journey maps, and brainstorm potential solutions through sketching and ideation sessions.</p>
+                        <div class="process-tools">
+                            <span>Personas</span>
+                            <span>Journey Maps</span>
+                            <span>Sketching</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-inner">03</div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Design & Prototype</h3>
+                        <p>I create wireframes, high-fidelity mockups, and interactive prototypes to visualize the solution and test different design approaches.</p>
+                        <div class="process-tools">
+                            <span>Wireframes</span>
+                            <span>Mockups</span>
+                            <span>Prototypes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-inner">04</div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Test & Iterate</h3>
+                        <p>I conduct usability testing, gather feedback, and iterate on the design to ensure it meets user needs and business objectives.</p>
+                        <div class="process-tools">
+                            <span>Usability Testing</span>
+                            <span>A/B Testing</span>
+                            <span>Iteration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-content">
+                        <div class="section-badge">Get In Touch</div>
+                        <h2 class="section-title">
+                            Let's create something
+                            <span class="highlight">amazing together</span>
+                        </h2>
+                        <p class="section-description">
+                            I'm always interested in new opportunities and exciting projects. Whether you have a specific project in mind or just want to chat about design, feel free to reach out.
+                        </p>
+
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>alex@designstudio.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>San Francisco, CA</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project">Project Type</label>
+                            <select id="project" name="project">
+                                <option value="">Select project type</option>
+                                <option value="web-design">Web Design</option>
+                                <option value="mobile-app">Mobile App</option>
+                                <option value="branding">Branding</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="5k-10k">$5k - $10k</option>
+                                <option value="10k-25k">$10k - $25k</option>
+                                <option value="25k-50k">$25k - $50k</option>
+                                <option value="50k+">$50k+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Alex Chen. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

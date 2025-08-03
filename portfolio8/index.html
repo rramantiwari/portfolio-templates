@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma Davis - Marketing Specialist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Loading Analytics...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <div class="brand-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <span>Emma Davis</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#campaigns">Campaigns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#analytics">Analytics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="floating-charts">
+                <div class="chart-element chart-1">
+                    <canvas id="heroChart1"></canvas>
+                </div>
+                <div class="chart-element chart-2">
+                    <canvas id="heroChart2"></canvas>
+                </div>
+                <div class="chart-element chart-3">
+                    <canvas id="heroChart3"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-badge">
+                        <i class="fas fa-rocket me-2"></i>
+                        Marketing Specialist
+                    </div>
+                    <h1 class="hero-title">
+                        Data-Driven Marketing
+                        <span class="highlight">Strategies</span>
+                        That Convert
+                    </h1>
+                    <p class="hero-description">
+                        I help businesses grow through strategic digital marketing campaigns, data analytics, and conversion optimization. Let's turn your marketing goals into measurable results.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#campaigns" class="btn btn-primary">
+                            <i class="fas fa-chart-bar me-2"></i>View Campaigns
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-calendar me-2"></i>Schedule Consultation
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">250%</span>
+                            <span class="stat-label">Avg ROI Increase</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Successful Campaigns</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5M+</span>
+                            <span class="stat-label">Leads Generated</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="dashboard-mockup">
+                            <div class="dashboard-header">
+                                <div class="dashboard-title">Marketing Dashboard</div>
+                                <div class="dashboard-controls">
+                                    <span class="control active"></span>
+                                    <span class="control"></span>
+                                    <span class="control"></span>
+                                </div>
+                            </div>
+                            <div class="dashboard-content">
+                                <div class="metric-card">
+                                    <div class="metric-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="metric-info">
+                                        <div class="metric-value">24,567</div>
+                                        <div class="metric-label">Total Leads</div>
+                                        <div class="metric-change positive">+15.3%</div>
+                                    </div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-icon">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                    <div class="metric-info">
+                                        <div class="metric-value">$127K</div>
+                                        <div class="metric-label">Revenue</div>
+                                        <div class="metric-change positive">+28.7%</div>
+                                    </div>
+                                </div>
+                                <div class="chart-container">
+                                    <canvas id="heroMainChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=600&fit=crop" alt="Emma Davis - Marketing Specialist">
+                        <div class="experience-badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="badge-content">
+                                <span class="number">8+</span>
+                                <span class="text">Years Experience</span>
+                            </div>
+                        </div>
+                        <div class="floating-metrics">
+                            <div class="metric-bubble metric-1">
+                                <i class="fas fa-trending-up"></i>
+                                <span>ROI</span>
+                            </div>
+                            <div class="metric-bubble metric-2">
+                                <i class="fas fa-target"></i>
+                                <span>CTR</span>
+                            </div>
+                            <div class="metric-bubble metric-3">
+                                <i class="fas fa-chart-pie"></i>
+                                <span>Conv</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-badge">About Me</div>
+                    <h2 class="section-title">
+                        Turning Data Into
+                        <span class="highlight">Marketing Gold</span>
+                    </h2>
+                    <p class="section-description">
+                        With over 8 years of experience in digital marketing, I specialize in creating data-driven strategies that deliver measurable results. My expertise spans across multiple channels and industries.
+                    </p>
+
+                    <div class="expertise-areas">
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="expertise-content">
+                                <h4>SEO & SEM</h4>
+                                <p>Advanced search engine optimization and marketing strategies</p>
+                            </div>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div class="expertise-content">
+                                <h4>Social Media Marketing</h4>
+                                <p>Comprehensive social media strategy and management</p>
+                            </div>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="expertise-content">
+                                <h4>Email Marketing</h4>
+                                <p>Automated email campaigns with high conversion rates</p>
+                            </div>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="expertise-content">
+                                <h4>Analytics & Reporting</h4>
+                                <p>Deep dive analytics and actionable insights</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">Services</div>
+                <h2 class="section-title">
+                    Marketing Services That
+                    <span class="highlight">Drive Results</span>
+                </h2>
+                <p class="section-description">
+                    Comprehensive marketing solutions tailored to your business needs and goals.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Digital Marketing Strategy</h3>
+                    <p>Complete digital marketing strategy development with multi-channel approach and performance tracking.</p>
+                    <ul class="service-features">
+                        <li>Market Research & Analysis</li>
+                        <li>Competitor Analysis</li>
+                        <li>Channel Strategy</li>
+                        <li>KPI Definition</li>
+                        <li>Campaign Planning</li>
+                    </ul>
+                    <div class="service-price">Starting at $2,500</div>
+                    <a href="#contact" class="btn btn-primary w-100">Get Started</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Comprehensive SEO strategy to improve your search engine rankings and organic traffic.</p>
+                    <ul class="service-features">
+                        <li>Technical SEO Audit</li>
+                        <li>Keyword Research</li>
+                        <li>Content Optimization</li>
+                        <li>Link Building</li>
+                        <li>Performance Tracking</li>
+                    </ul>
+                    <div class="service-price">Starting at $1,500</div>
+                    <a href="#contact" class="btn btn-outline w-100">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>PPC Advertising</h3>
+                    <p>Strategic paid advertising campaigns across Google Ads, Facebook, and other platforms.</p>
+                    <ul class="service-features">
+                        <li>Campaign Setup</li>
+                        <li>Ad Creation & Testing</li>
+                        <li>Bid Management</li>
+                        <li>Landing Page Optimization</li>
+                        <li>ROI Optimization</li>
+                    </ul>
+                    <div class="service-price">Starting at $2,000</div>
+                    <a href="#contact" class="btn btn-outline w-100">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Social Media Management</h3>
+                    <p>Complete social media strategy, content creation, and community management.</p>
+                    <ul class="service-features">
+                        <li>Content Strategy</li>
+                        <li>Content Creation</li>
+                        <li>Community Management</li>
+                        <li>Influencer Outreach</li>
+                        <li>Social Analytics</li>
+                    </ul>
+                    <div class="service-price">Starting at $1,200</div>
+                    <a href="#contact" class="btn btn-outline w-100">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Marketing</h3>
+                    <p>Automated email marketing campaigns that nurture leads and drive conversions.</p>
+                    <ul class="service-features">
+                        <li>Email Strategy</li>
+                        <li>List Building</li>
+                        <li>Campaign Creation</li>
+                        <li>Automation Setup</li>
+                        <li>Performance Analysis</li>
+                    </ul>
+                    <div class="service-price">Starting at $800</div>
+                    <a href="#contact" class="btn btn-outline w-100">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Comprehensive analytics setup and regular reporting to track your marketing performance.</p>
+                    <ul class="service-features">
+                        <li>Analytics Setup</li>
+                        <li>Custom Dashboards</li>
+                        <li>Monthly Reports</li>
+                        <li>Performance Analysis</li>
+                        <li>Optimization Recommendations</li>
+                    </ul>
+                    <div class="service-price">Starting at $600</div>
+                    <a href="#contact" class="btn btn-outline w-100">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaigns Section -->
+    <section id="campaigns" class="campaigns-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">Case Studies</div>
+                <h2 class="section-title">
+                    Successful Marketing
+                    <span class="highlight">Campaigns</span>
+                </h2>
+                <p class="section-description">
+                    Real results from real campaigns. See how I've helped businesses achieve their marketing goals.
+                </p>
+            </div>
+
+            <div class="campaigns-grid">
+                <div class="campaign-card">
+                    <div class="campaign-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="E-commerce Campaign">
+                        <div class="campaign-overlay">
+                            <div class="campaign-type">E-commerce</div>
+                        </div>
+                    </div>
+                    <div class="campaign-content">
+                        <h3>Fashion Retailer Growth</h3>
+                        <p>Comprehensive digital marketing strategy for a fashion e-commerce brand resulting in significant growth.</p>
+                        <div class="campaign-metrics">
+                            <div class="metric">
+                                <span class="metric-value">340%</span>
+                                <span class="metric-label">ROI Increase</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2.5M</span>
+                                <span class="metric-label">Impressions</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">15.2%</span>
+                                <span class="metric-label">Conversion Rate</span>
+                            </div>
+                        </div>
+                        <div class="campaign-tags">
+                            <span class="tag">PPC</span>
+                            <span class="tag">Social Media</span>
+                            <span class="tag">Email</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="campaign-card">
+                    <div class="campaign-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=250&fit=crop" alt="SaaS Campaign">
+                        <div class="campaign-overlay">
+                            <div class="campaign-type">SaaS</div>
+                        </div>
+                    </div>
+                    <div class="campaign-content">
+                        <h3>SaaS Lead Generation</h3>
+                        <p>Multi-channel lead generation campaign for a B2B SaaS platform targeting enterprise clients.</p>
+                        <div class="campaign-metrics">
+                            <div class="metric">
+                                <span class="metric-value">450</span>
+                                <span class="metric-label">Qualified Leads</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">28%</span>
+                                <span class="metric-label">Lead-to-Customer</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">$2.1M</span>
+                                <span class="metric-label">Pipeline Value</span>
+                            </div>
+                        </div>
+                        <div class="campaign-tags">
+                            <span class="tag">LinkedIn</span>
+                            <span class="tag">Content</span>
+                            <span class="tag">SEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="campaign-card">
+                    <div class="campaign-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop" alt="Restaurant Campaign">
+                        <div class="campaign-overlay">
+                            <div class="campaign-type">Restaurant</div>
+                        </div>
+                    </div>
+                    <div class="campaign-content">
+                        <h3>Restaurant Chain Expansion</h3>
+                        <p>Local SEO and social media campaign for a restaurant chain expanding to new markets.</p>
+                        <div class="campaign-metrics">
+                            <div class="metric">
+                                <span class="metric-value">180%</span>
+                                <span class="metric-label">Foot Traffic</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-label">Local Visibility</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">4.8</span>
+                                <span class="metric-label">Avg Rating</span>
+                            </div>
+                        </div>
+                        <div class="campaign-tags">
+                            <span class="tag">Local SEO</span>
+                            <span class="tag">Social</span>
+                            <span class="tag">Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section id="analytics" class="analytics-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">Analytics</div>
+                <h2 class="section-title">
+                    Data-Driven
+                    <span class="highlight">Insights</span>
+                </h2>
+                <p class="section-description">
+                    Real-time analytics and performance metrics from recent campaigns.
+                </p>
+            </div>
+
+            <div class="analytics-dashboard">
+                <div class="dashboard-grid">
+                    <div class="analytics-card">
+                        <div class="card-header">
+                            <h3>Campaign Performance</h3>
+                            <div class="time-filter">
+                                <button class="filter-btn active">30D</button>
+                                <button class="filter-btn">90D</button>
+                                <button class="filter-btn">1Y</button>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="performanceChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="analytics-card">
+                        <div class="card-header">
+                            <h3>Channel Distribution</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="channelChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="analytics-card">
+                        <div class="card-header">
+                            <h3>Conversion Funnel</h3>
+                        </div>
+                        <div class="funnel-container">
+                            <div class="funnel-stage">
+                                <div class="stage-bar" style="width: 100%;">
+                                    <span class="stage-label">Impressions</span>
+                                    <span class="stage-value">1,250,000</span>
+                                </div>
+                            </div>
+                            <div class="funnel-stage">
+                                <div class="stage-bar" style="width: 15%;">
+                                    <span class="stage-label">Clicks</span>
+                                    <span class="stage-value">187,500</span>
+                                </div>
+                            </div>
+                            <div class="funnel-stage">
+                                <div class="stage-bar" style="width: 8%;">
+                                    <span class="stage-label">Leads</span>
+                                    <span class="stage-value">100,000</span>
+                                </div>
+                            </div>
+                            <div class="funnel-stage">
+                                <div class="stage-bar" style="width: 2.4%;">
+                                    <span class="stage-label">Customers</span>
+                                    <span class="stage-value">30,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="analytics-card">
+                        <div class="card-header">
+                            <h3>Key Metrics</h3>
+                        </div>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <div class="metric-icon">
+                                    <i class="fas fa-mouse-pointer"></i>
+                                </div>
+                                <div class="metric-data">
+                                    <div class="metric-value">3.2%</div>
+                                    <div class="metric-label">CTR</div>
+                                    <div class="metric-change positive">+0.8%</div>
+                                </div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <div class="metric-data">
+                                    <div class="metric-value">$2.45</div>
+                                    <div class="metric-label">CPC</div>
+                                    <div class="metric-change negative">-$0.15</div>
+                                </div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="metric-data">
+                                    <div class="metric-value">12.8%</div>
+                                    <div class="metric-label">Conv Rate</div>
+                                    <div class="metric-change positive">+2.1%</div>
+                                </div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="metric-data">
+                                    <div class="metric-value">285%</div>
+                                    <div class="metric-label">ROAS</div>
+                                    <div class="metric-change positive">+45%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">Contact</div>
+                <h2 class="section-title">
+                    Ready to Grow Your
+                    <span class="highlight">Business?</span>
+                </h2>
+                <p class="section-description">
+                    Let's discuss your marketing goals and create a strategy that delivers results.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Ready to take your marketing to the next level? Let's schedule a consultation to discuss your goals and how I can help you achieve them.</p>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>emma.davis@marketing.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>San Francisco, CA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Availability</h4>
+                                <p>Mon - Fri, 9AM - 6PM PST</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Marketing Budget</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select Budget Range</option>
+                            <option value="under-5k">Under $5,000</option>
+                            <option value="5k-15k">$5,000 - $15,000</option>
+                            <option value="15k-50k">$15,000 - $50,000</option>
+                            <option value="50k-plus">$50,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="services">Services Needed</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services[]" value="strategy">
+                                <span class="checkmark"></span>
+                                Digital Strategy
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services[]" value="seo">
+                                <span class="checkmark"></span>
+                                SEO
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services[]" value="ppc">
+                                <span class="checkmark"></span>
+                                PPC Advertising
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="services[]" value="social">
+                                <span class="checkmark"></span>
+                                Social Media
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your marketing goals and challenges..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Emma Davis. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
