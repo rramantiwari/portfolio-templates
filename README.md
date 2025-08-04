@@ -3,7 +3,6 @@
 A comprehensive collection of 10 stunning, responsive portfolio templates designed for various professionals and creative individuals. Each template is crafted with modern web technologies and features unique animations, layouts, and styling.
 
 ## 🚀 Features
-
 - **10 Unique Designs**: Each portfolio template is tailored for different professions
 - **Fully Responsive**: Works perfectly on desktop, tablet, and mobile devices
 - **Modern Technologies**: Built with HTML5, CSS3, JavaScript, and Bootstrap 5
